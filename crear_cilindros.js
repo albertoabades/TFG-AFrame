@@ -34,13 +34,47 @@ AFRAME.registerComponent('cylinder', {
       ["s14","s11"]
     ]
 
+    let datos_cilindros =[
+      ["s11s12", 1, 0.5, -4, 0, 90, 90],
+      ["s12s13", 0, 0.5, -5, 0, 0, 90],
+      ["s13s14", -1, 0.5, -4, 0, 90, 90],
+      ["s14s11", 0, 0.5, -3, 0, 0, 90],
+      ["s21s22", 1, 0.5, 2, 0, 90, 90],
+      ["s22s23", 0, 0.5, 3, 0, 0, 90],
+      ["s23s24", -1, 0.5, 2, 0, 90, 90],
+      ["s24s21", 0, 0.5, 1, 0, 0, 90],
+      ["s11s1", 1.65, 0.5, -3.5, 0, 45, 90],
+      ["s12s1", 1.65, 0.5, -4.5, 0, -45, 90],
+      ["s21s2", 1.65, 0.5, 1.5, 0, -45, 90],
+      ["s22s2", 1.65, 0.5, 2.5, 0, 45, 90],
+      ["s1s0", 3.15, 0.5, -2.5, 0, -55, 90],
+      ["s2s0", 3.15, 0.5, 0.5, 0, 55, 90]
+    ]
+
     //Creacion de bloques de cajas a partir de coordenadad
+    for (let i = 0; i < datos_cilindros.length; i++) {
       var cylEl = document.createElement('a-cylinder');
-      cylEl.setAttribute('position', {x: 1, y: 0.5, z: -4})
-      cylEl.setAttribute('rotation', {x: 0, y:90, z:90})
+      cylEl.setAttribute('position', 
+        {
+         x: datos_cilindros[i][1], 
+         y: datos_cilindros[i][2], 
+         z: datos_cilindros[i][3]
+        })
+      cylEl.setAttribute('rotation', 
+        {
+          x: datos_cilindros[i][4], 
+          y: datos_cilindros[i][5], 
+          z: datos_cilindros[i][6]
+        })
+      cylEl.setAttribute('ID', datos_cilindros[i][0]);
       cylEl.setAttribute('color', '#74BEC1')
       cylEl.setAttribute('radius', 0.03)
-      cylEl.setAttribute('height', 2)
+      if(datos_cilindros[i][0] == "s1s0" || datos_cilindros[i][0] == "s2s0"){
+        cylEl.setAttribute('height', 3)
+      }else{
+        cylEl.setAttribute('height', 2)
+      }
+      
       //document.querySelector('a-scene').appendChild(cylEl);
       // Create geometry.
       //this.geometry = new THREE.BoxBufferGeometry(data.width, data.height, data.depth);
@@ -55,5 +89,6 @@ AFRAME.registerComponent('cylinder', {
       //el.setObject3D('mesh', this.mesh);
       //scene.add( cube );
       document.querySelector('a-scene').appendChild(cylEl);
+    }
   }
 });
