@@ -9,30 +9,8 @@ AFRAME.registerComponent('cylinder', {
    * Initial creation and setting of the mesh.
    */
   init: function () {
-    //var boxEl = document.createElement('a-box');
     var data = this.data;
     var el = this.el;
-
-    let coordenadas = [
-      ["s0", 4, 0.5, -1],
-      ["s1", 2.3, 0.5, -4],
-      ["s2", 2.3, 0.5, 2],
-      ["s11", 1, 0.5, -3],
-      ["s12", 1, 0.5, -5],
-      ["s13", -1, 0.5, -5],
-      ["s14", -1, 0.5, -3,],
-      ["s21", 1, 0.5, 1],
-      ["s22", 1, 0.5, 3],
-      ["s23", -1, 0.5, 3],
-      ["s24", -1, 0.5, 1]
-      ]
-
-    let uniones = [
-      ["s11","s12"],
-      ["s12","s13"],
-      ["s13","s14"],
-      ["s14","s11"]
-    ]
 
     let datos_cilindros =[
       ["s11s12", 1, 0.5, -4, 0, 90, 90],
@@ -51,43 +29,46 @@ AFRAME.registerComponent('cylinder', {
       ["s2s0", 3.15, 0.5, 0.5, 0, 55, 90]
     ]
 
-    //Creacion de bloques de cajas a partir de coordenadad
+    //Bucle para recorrer la matriz de datos_cilindros y generar cada cilindro que servirá de enlace
     for (let i = 0; i < datos_cilindros.length; i++) {
+      // Se crea un cilindro para que haga de uniones entre cajas
       var cylEl = document.createElement('a-cylinder');
+      //Se asignan las coordenadas recuperadas de la matriz de datos_cilindros al cilindro que servirá de enlace y se acaba de crear
       cylEl.setAttribute('position', 
         {
-         x: datos_cilindros[i][1], 
-         y: datos_cilindros[i][2], 
+         x: datos_cilindros[i][1],
+         y: datos_cilindros[i][2],
          z: datos_cilindros[i][3]
         })
+      //Se asigna la rotación al cilindro para que se unan los router/cajas, se recuperan de la matriz de datos_cilindros
       cylEl.setAttribute('rotation', 
         {
           x: datos_cilindros[i][4], 
           y: datos_cilindros[i][5], 
           z: datos_cilindros[i][6]
         })
+      // Se asigna un ID único al cilindro que servirá de enlace
       cylEl.setAttribute('ID', datos_cilindros[i][0]);
+      // Se asigna un color al cilindro que servirá de enlace y se acaba de crear
       cylEl.setAttribute('color', '#74BEC1')
+      // Se asigna un radio al cilindro que servirá de enlace y se acaba de crear
       cylEl.setAttribute('radius', 0.03)
+      // Se asigna una longitud a los cilindro que servirán de enlace y se acabn de crear.
       if(datos_cilindros[i][0] == "s1s0" || datos_cilindros[i][0] == "s2s0"){
         cylEl.setAttribute('height', 3)
       }else{
         cylEl.setAttribute('height', 2)
       }
       
-      //document.querySelector('a-scene').appendChild(cylEl);
       // Create geometry.
-      //this.geometry = new THREE.BoxBufferGeometry(data.width, data.height, data.depth);
       this.geometry  = new THREE.CylinderGeometry(data.radius, data.height);
       // Create material.
       this.material = new THREE.MeshStandardMaterial({color: data.color});
       // Create mesh.
       this.mesh = new THREE.Mesh(this.geometry, this.material);
-      //cube = new THREE.Mesh(this.geometry, this.material);
       // Set mesh on entity.
       cylEl.setObject3D('mesh', this.mesh);
-      //el.setObject3D('mesh', this.mesh);
-      //scene.add( cube );
+      // Se incluye el cilindro que servirá de enlace y se acaba de crear en la escena
       document.querySelector('a-scene').appendChild(cylEl);
     }
   }
