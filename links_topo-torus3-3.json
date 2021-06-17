@@ -1,0 +1,146 @@
+[
+	{
+		"src": {"dpid": "0000000000000201", "port_no": "00000003", "hw_addr": "ba:d0:c9:da:39:30", "name": "s2x1-eth3"}, 
+		"dst": {"dpid": "0000000000000202", "port_no": "00000003", "hw_addr": "72:f2:94:95:d7:92", "name": "s2x2-eth3"}
+	}, 
+	{
+		"src": {"dpid": "0000000000000102", "port_no": "00000004", "hw_addr": "ee:d7:a9:a2:69:aa", "name": "s1x2-eth4"}, 
+		"dst": {"dpid": "0000000000000202", "port_no": "00000002", "hw_addr": "f6:65:58:70:92:60", "name": "s2x2-eth2"}
+	}, 
+	{
+		"src": {"dpid": "0000000000000203", "port_no": "00000003", "hw_addr": "6e:52:c4:2b:62:52", "name": "s2x3-eth3"}, 
+		"dst": {"dpid": "0000000000000202", "port_no": "00000004", "hw_addr": "16:c4:73:d1:bd:da", "name": "s2x2-eth4"}
+	}, 
+	{
+		"src": {"dpid": "0000000000000302", "port_no": "00000002", "hw_addr": "fe:09:09:46:04:1f", "name": "s3x2-eth2"}, 
+		"dst": {"dpid": "0000000000000202", "port_no": "00000005", "hw_addr": "ce:4f:91:d9:21:64", "name": "s2x2-eth5"}
+	}, 
+	{
+		"src": {"dpid": "0000000000000303", "port_no": "00000002", "hw_addr": "2e:42:e8:aa:3a:42", "name": "s3x3-eth2"}, 
+		"dst": {"dpid": "0000000000000203", "port_no": "00000005", "hw_addr": "8a:28:66:0e:2c:30", "name": "s2x3-eth5"}
+	}, 
+	{
+		"src": {"dpid": "0000000000000103", "port_no": "00000004", "hw_addr": "fe:5f:e0:8d:2b:44", "name": "s1x3-eth4"}, 
+		"dst": {"dpid": "0000000000000203", "port_no": "00000002", "hw_addr": "2e:1a:65:31:71:de", "name": "s2x3-eth2"}
+	}, 
+	{
+		"src": {"dpid": "0000000000000202", "port_no": "00000004", "hw_addr": "16:c4:73:d1:bd:da", "name": "s2x2-eth4"}, 
+		"dst": {"dpid": "0000000000000203", "port_no": "00000003", "hw_addr": "6e:52:c4:2b:62:52", "name": "s2x3-eth3"}
+	}, 
+	{
+		"src": {"dpid": "0000000000000103", "port_no": "00000005", "hw_addr": "a2:b2:fc:99:42:42", "name": "s1x3-eth5"}, 
+		"dst": {"dpid": "0000000000000303", "port_no": "00000005", "hw_addr": "ce:78:a9:be:4d:c4", "name": "s3x3-eth5"}
+	}, 
+	{
+		"src": {"dpid": "0000000000000302", "port_no": "00000004", "hw_addr": "e6:66:9c:f2:17:4e", "name": "s3x2-eth4"}, 
+		"dst": {"dpid": "0000000000000303", "port_no": "00000003", "hw_addr": "ae:9c:9b:06:ac:55", "name": "s3x3-eth3"}
+	}, 
+	{
+		"src": {"dpid": "0000000000000103", "port_no": "00000002", "hw_addr": "66:8d:bd:60:08:44", "name": "s1x3-eth2"}, 
+		"dst": {"dpid": "0000000000000102", "port_no": "00000003", "hw_addr": "56:16:4c:5b:25:aa", "name": "s1x2-eth3"}
+	}, 
+	{
+		"src": {"dpid": "0000000000000302", "port_no": "00000005", "hw_addr": "12:f4:e1:1f:46:75", "name": "s3x2-eth5"}, 
+		"dst": {"dpid": "0000000000000102", "port_no": "00000005", "hw_addr": "ee:5d:25:a8:5c:3c", "name": "s1x2-eth5"}
+	}, 
+	{
+		"src": {"dpid": "0000000000000202", "port_no": "00000002", "hw_addr": "f6:65:58:70:92:60", "name": "s2x2-eth2"}, 
+		"dst": {"dpid": "0000000000000102", "port_no": "00000004", "hw_addr": "ee:d7:a9:a2:69:aa", "name": "s1x2-eth4"}
+	}, 
+	{
+		"src": {"dpid": "0000000000000102", "port_no": "00000002", "hw_addr": "46:13:da:d5:ca:ce", "name": "s1x2-eth2"}, 
+		"dst": {"dpid": "0000000000000101", "port_no": "00000002", "hw_addr": "0a:3d:fc:5c:8b:65", "name": "s1x1-eth2"}
+	}, 
+	{
+		"src": {"dpid": "0000000000000103", "port_no": "00000003", "hw_addr": "3e:a4:83:f7:bf:77", "name": "s1x3-eth3"}, 
+		"dst": {"dpid": "0000000000000101", "port_no": "00000004", "hw_addr": "36:f5:c4:74:1e:69", "name": "s1x1-eth4"}
+	}, 
+	{
+		"src": {"dpid": "0000000000000201", "port_no": "00000004", "hw_addr": "02:45:f5:0a:24:9b", "name": "s2x1-eth4"}, 
+		"dst": {"dpid": "0000000000000301", "port_no": "00000002", "hw_addr": "42:80:34:65:69:98", "name": "s3x1-eth2"}
+	}, 
+	{
+		"src": {"dpid": "0000000000000101", "port_no": "00000005", "hw_addr": "1a:a3:d4:a7:62:31", "name": "s1x1-eth5"}, 
+		"dst": {"dpid": "0000000000000301", "port_no": "00000004", "hw_addr": "92:12:f0:07:bc:ec", "name": "s3x1-eth4"}
+	}, 
+	{
+		"src": {"dpid": "0000000000000303", "port_no": "00000004", "hw_addr": "32:e1:43:5d:fe:32", "name": "s3x3-eth4"}, 
+		"dst": {"dpid": "0000000000000301", "port_no": "00000005", "hw_addr": "12:9c:23:8e:9d:ed", "name": "s3x1-eth5"}
+	}, 
+	{
+		"src": {"dpid": "0000000000000302", "port_no": "00000003", "hw_addr": "fa:3d:f3:94:47:72", "name": "s3x2-eth3"}, 
+		"dst": {"dpid": "0000000000000301", "port_no": "00000003", "hw_addr": "ee:63:ce:dc:55:e0", "name": "s3x1-eth3"}
+	}, 
+	{
+		"src": {"dpid": "0000000000000101", "port_no": "00000003", "hw_addr": "8a:18:04:9d:b9:90", "name": "s1x1-eth3"}, 
+		"dst": {"dpid": "0000000000000201", "port_no": "00000002", "hw_addr": "de:c3:3f:86:00:55", "name": "s2x1-eth2"}
+	}, 
+	{
+		"src": {"dpid": "0000000000000203", "port_no": "00000004", "hw_addr": "86:b5:67:4c:61:4b", "name": "s2x3-eth4"}, 
+		"dst": {"dpid": "0000000000000201", "port_no": "00000005", "hw_addr": "4e:2a:52:2d:38:97", "name": "s2x1-eth5"}
+	}, 
+	{
+		"src": {"dpid": "0000000000000202", "port_no": "00000003", "hw_addr": "72:f2:94:95:d7:92", "name": "s2x2-eth3"}, 
+		"dst": {"dpid": "0000000000000201", "port_no": "00000003", "hw_addr": "ba:d0:c9:da:39:30", "name": "s2x1-eth3"}
+	}, 
+	{
+		"src": {"dpid": "0000000000000301", "port_no": "00000002", "hw_addr": "42:80:34:65:69:98", "name": "s3x1-eth2"}, 
+		"dst": {"dpid": "0000000000000201", "port_no": "00000004", "hw_addr": "02:45:f5:0a:24:9b", "name": "s2x1-eth4"}
+	}, 
+	{
+		"src": {"dpid": "0000000000000301", "port_no": "00000004", "hw_addr": "92:12:f0:07:bc:ec", "name": "s3x1-eth4"}, 
+		"dst": {"dpid": "0000000000000101", "port_no": "00000005", "hw_addr": "1a:a3:d4:a7:62:31", "name": "s1x1-eth5"}
+	}, 
+	{
+		"src": {"dpid": "0000000000000201", "port_no": "00000002", "hw_addr": "de:c3:3f:86:00:55", "name": "s2x1-eth2"}, 
+		"dst": {"dpid": "0000000000000101", "port_no": "00000003", "hw_addr": "8a:18:04:9d:b9:90", "name": "s1x1-eth3"}
+	}, 
+	{
+		"src": {"dpid": "0000000000000101", "port_no": "00000002", "hw_addr": "0a:3d:fc:5c:8b:65", "name": "s1x1-eth2"}, 
+		"dst": {"dpid": "0000000000000102", "port_no": "00000002", "hw_addr": "46:13:da:d5:ca:ce", "name": "s1x2-eth2"}
+	}, 
+	{
+		"src": {"dpid": "0000000000000201", "port_no": "00000005", "hw_addr": "4e:2a:52:2d:38:97", "name": "s2x1-eth5"}, 
+		"dst": {"dpid": "0000000000000203", "port_no": "00000004", "hw_addr": "86:b5:67:4c:61:4b", "name": "s2x3-eth4"}
+	}, 
+	{
+		"src": {"dpid": "0000000000000301", "port_no": "00000005", "hw_addr": "12:9c:23:8e:9d:ed", "name": "s3x1-eth5"}, 
+		"dst": {"dpid": "0000000000000303", "port_no": "00000004", "hw_addr": "32:e1:43:5d:fe:32", "name": "s3x3-eth4"}
+	}, 
+	{
+		"src": {"dpid": "0000000000000203", "port_no": "00000005", "hw_addr": "8a:28:66:0e:2c:30", "name": "s2x3-eth5"}, 
+		"dst": {"dpid": "0000000000000303", "port_no": "00000002", "hw_addr": "2e:42:e8:aa:3a:42", "name": "s3x3-eth2"}
+	}, 
+	{
+		"src": {"dpid": "0000000000000101", "port_no": "00000004", "hw_addr": "36:f5:c4:74:1e:69", "name": "s1x1-eth4"}, 
+		"dst": {"dpid": "0000000000000103", "port_no": "00000003", "hw_addr": "3e:a4:83:f7:bf:77", "name": "s1x3-eth3"}
+	}, 
+	{
+		"src": {"dpid": "0000000000000102", "port_no": "00000003", "hw_addr": "56:16:4c:5b:25:aa", "name": "s1x2-eth3"}, 
+		"dst": {"dpid": "0000000000000103", "port_no": "00000002", "hw_addr": "66:8d:bd:60:08:44", "name": "s1x3-eth2"}
+	}, 
+	{
+		"src": {"dpid": "0000000000000203", "port_no": "00000002", "hw_addr": "2e:1a:65:31:71:de", "name": "s2x3-eth2"}, 
+		"dst": {"dpid": "0000000000000103", "port_no": "00000004", "hw_addr": "fe:5f:e0:8d:2b:44", "name": "s1x3-eth4"}
+	}, 
+	{
+		"src": {"dpid": "0000000000000303", "port_no": "00000005", "hw_addr": "ce:78:a9:be:4d:c4", "name": "s3x3-eth5"}, 
+		"dst": {"dpid": "0000000000000103", "port_no": "00000005", "hw_addr": "a2:b2:fc:99:42:42", "name": "s1x3-eth5"}
+	}, 
+	{
+		"src": {"dpid": "0000000000000202", "port_no": "00000005", "hw_addr": "ce:4f:91:d9:21:64", "name": "s2x2-eth5"}, 
+		"dst": {"dpid": "0000000000000302", "port_no": "00000002", "hw_addr": "fe:09:09:46:04:1f", "name": "s3x2-eth2"}
+	}, 
+	{
+		"src": {"dpid": "0000000000000301", "port_no": "00000003", "hw_addr": "ee:63:ce:dc:55:e0", "name": "s3x1-eth3"}, 
+		"dst": {"dpid": "0000000000000302", "port_no": "00000003", "hw_addr": "fa:3d:f3:94:47:72", "name": "s3x2-eth3"}
+	}, 
+	{
+		"src": {"dpid": "0000000000000102", "port_no": "00000005", "hw_addr": "ee:5d:25:a8:5c:3c", "name": "s1x2-eth5"}, 
+		"dst": {"dpid": "0000000000000302", "port_no": "00000005", "hw_addr": "12:f4:e1:1f:46:75", "name": "s3x2-eth5"}
+	}, 
+	{
+		"src": {"dpid": "0000000000000303", "port_no": "00000003", "hw_addr": "ae:9c:9b:06:ac:55", "name": "s3x3-eth3"}, 
+		"dst": {"dpid": "0000000000000302", "port_no": "00000004", "hw_addr": "e6:66:9c:f2:17:4e", "name": "s3x2-eth4"}
+	}
+]
