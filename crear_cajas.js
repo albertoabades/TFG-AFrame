@@ -61,9 +61,5 @@ AFRAME.registerComponent('box', {
       //Se incluye la caja/router que se acaba de crear en la escena general
       document.querySelector('a-scene').appendChild(boxEl);
     }
-    let routerA = document.getElementById('s11');
-    let routerACoordenadas = routerA.getAttribute('position');
-    let coordA = Object.values(routerACoordenadas);
-    console.log(routerA);
   }
 });
