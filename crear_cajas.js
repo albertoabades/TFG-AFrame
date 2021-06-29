@@ -30,7 +30,7 @@ AFRAME.registerComponent('box', {
 
     //Bucle para recorrer la matriz de coordenadas y generar cada caja/router
     for (let i = 0; i < coordenadas.length; i++) {
-      //Se crea un elemento genérico de tipo cada
+      //Se crea un elemento genérico de tipo caja
       var boxEl = document.createElement('a-box');
       //Se asignan las coordenadas recuperadas de la matriz de coordenadas
       boxEl.setAttribute('position', {
