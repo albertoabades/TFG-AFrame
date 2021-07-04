@@ -1,0 +1,12 @@
+{
+    "cars": {
+        "Nissan": {
+            "Sentra": {"doors":4, "transmission":"automatic"},
+            "Maxima": {"doors":4, "transmission":"automatic"}
+        },
+        "Ford": {
+            "Taurus": {"doors":4, "transmission":"automatic"},
+            "Escort": {"doors":4, "transmission":"automatic"}
+        }
+    }
+}
