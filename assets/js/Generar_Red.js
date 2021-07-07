@@ -4,11 +4,7 @@ AFRAME.registerComponent('red', {
   },
 
   init: function () {
-    let el = this.el
     let data = this.data
-    let tabla_links;
-    var tabla_origen_destino = [];
-    var origen_destino = [];
     let array_links =[];
     let array_switches =[];
     let array_switches_final = [];
@@ -21,9 +17,8 @@ AFRAME.registerComponent('red', {
     request.send();
 
     request.onload = function() {
-        const linkstxt = request.response; // We take the response string
-        const links = JSON.parse(linkstxt); // We convert it to an object
-        //let array_links =[];
+        const linkstxt = request.response;
+        const links = JSON.parse(linkstxt);
         for (let i = 0; i < links.length; i++) {
             let origen = links[i].src.dpid;
             let destino = links[i].dst.dpid;
@@ -92,9 +87,6 @@ AFRAME.registerComponent('red', {
             var scene = document.querySelector('a-scene');
             scene.appendChild(enlace);
         }
-        console.log(array_links);
-        console.log(array_switches);
-        console.log(array_switches_final);
     }
   }
 
