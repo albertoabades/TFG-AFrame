@@ -1,12 +1,12 @@
-{
-    "cars": {
-        "Nissan": {
-            "Sentra": {"doors":4, "transmission":"automatic"},
-            "Maxima": {"doors":4, "transmission":"automatic"}
-        },
-        "Ford": {
-            "Taurus": {"doors":4, "transmission":"automatic"},
-            "Escort": {"doors":4, "transmission":"automatic"}
-        }
+[
+    {
+        "src": {"dpid": "0000000000000002", "port_no": "00000002", "hw_addr": "ea:54:6d:2b:64:da", "name": "s2-eth2"}, 
+        "dst": {"dpid": "0000000000000001", "port_no": "00000002", "hw_addr": "06:31:ad:c6:15:87", "name": "s1-eth2"}
+    }, 
+    {
+        "src": {"dpid": "0000000000000002", "port_no": "00000003", "hw_addr": "5e:18:5f:86:c3:7c", "name": "s2-eth3"}, 
+        "dst": {"dpid": "0000000000000003", "port_no": "00000002", "hw_addr": "36:86:f6:3f:c8:a8", "name": "s3-eth2"}
     }
-}
+]
+
+

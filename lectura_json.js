@@ -1,7 +1,5 @@
-// this requests the file and executes a callback with the parsed result once
-//   it is available
 fetchJSONFile('Prueba_Lectura.json', function(data){
-    // do something with your data
+    // do something with your data 
     console.log(data);
 });
 
@@ -18,3 +16,5 @@ function fetchJSONFile(path, callback) {
     httpRequest.open('GET', path);
     httpRequest.send(); 
 }
+
+
